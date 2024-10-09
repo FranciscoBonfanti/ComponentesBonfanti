@@ -1,0 +1,7 @@
+<h3>Materias Inscritas</h3>
+<ul>
+  <li *ngFor="let materia of materiasInscritas">
+    {{materia.nombre}} - Del {{materia.inicio | date}} al {{materia.fin | date}}
+  </li>
+</ul>
+

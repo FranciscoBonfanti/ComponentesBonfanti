@@ -1,0 +1,42 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #37474f;
+    color: white;
+}
+
+td {
+    color: #333;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #37474f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+
+h2 {
+    font-size: 2rem;
+    color: #37474f;
+    margin-bottom: 15px;
+}

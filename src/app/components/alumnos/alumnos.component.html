@@ -1,0 +1,20 @@
+<h2>Gestión de Alumnos</h2>
+<p>Aquí puedes administrar la información de los alumnos, agregar nuevos, modificar o eliminar.</p>
+
+<input [(ngModel)]="nuevoAlumno.nombre" placeholder="Nombre" />
+<input [(ngModel)]="nuevoAlumno.dni" placeholder="DNI" />
+<input [(ngModel)]="nuevoAlumno.anio" placeholder="Año" />
+<input [(ngModel)]="nuevoAlumno.carrera" placeholder="Carrera" />
+
+<button mat-raised-button color="primary" (click)="alumnoAEditar ? actualizarAlumno() : agregarAlumno()">
+    {{ alumnoAEditar ? 'Actualizar Alumno' : 'Agregar Alumno' }}
+</button>
+
+<h3>Lista de Alumnos</h3>
+<ul>
+    <li *ngFor="let alumno of alumnos">
+        {{ alumno.nombre }} - DNI: {{ alumno.dni }} - Año: {{ alumno.anio }} - Carrera: {{ alumno.carrera }}
+        <button (click)="editarAlumno(alumno)">Editar</button>
+        <button (click)="eliminarAlumno(alumno)">Eliminar</button>
+    </li>
+</ul>

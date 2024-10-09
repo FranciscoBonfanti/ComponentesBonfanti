@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eceff1;
+}
+
+h1, h2, h3 {
+    color: #37474f;
+}
+
+/* Tabla de materias */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #455a64;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+    color: #37474f;
+    border-bottom: 1px solid #ddd;
+}

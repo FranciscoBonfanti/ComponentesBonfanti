@@ -1,0 +1,21 @@
+<h3>Materias Disponibles</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Materia</th>
+      <th>Fecha de Inicio</th>
+      <th>Fecha de Fin</th>
+      <th>Inscribirse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let materia of materiasDisponibles">
+      <td>{{materia.nombre}}</td>
+      <td>{{materia.inicio | date}}</td>
+      <td>{{materia.fin | date}}</td>
+      <td><button class="btn btn-primary" (click)="inscribirse(materia)">Inscribirse</button></td>
+    </tr>
+  </tbody>
+</table>
+
+

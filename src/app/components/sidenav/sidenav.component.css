@@ -1,0 +1,22 @@
+.sidenav-container{
+    height: 100vh;
+    margin-right: 20px;
+}
+
+.sidenav {
+    background-color: #37474f; 
+    border-radius: none;
+    margin-right: 20px;
+}
+
+.mat-list-item:hover {
+    background-color: #455a64; 
+    transition: background-color 0.3s ease;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
